@@ -33,7 +33,7 @@ def list_ec2_instance():
             public_address = instance['PublicIpAddress']
             security_id = instance['SecurityGroups'][0]['GroupId']
 
-        list_of_ec2.append([server_name, instance_id, image_id, instance_type, public_address, security_id])
+            list_of_ec2.append([server_name, instance_id, image_id, instance_type, public_address, security_id])
     return list_of_ec2
 
 
